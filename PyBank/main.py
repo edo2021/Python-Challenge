@@ -16,6 +16,7 @@ def BudgetAnalysis(budgetdata):
     Total_Loss_Profit = 0
     Average_Changes = 0
     profits = []
+    Profit_Value = 0
 
     # calculating Total_month
     Total_Month +=
@@ -26,6 +27,14 @@ def BudgetAnalysis(budgetdata):
 with open(budget_data_csv) as csv_file:
     csvreader = csv.reader(csvfile, delimiter=',')
 
-    header = next(csvreader)
+#Reading the header Row
+    csv_header = next(csvr(csvreader)
+    Total_Month += 1
+    Total_Loss_Profit = int(first_row[1])
+    for row in csvreader:
+        dates.append(row[0])
+
+    
+
 
 
