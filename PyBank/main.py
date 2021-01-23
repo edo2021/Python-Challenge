@@ -6,19 +6,19 @@ budget_data =os.path.join("budget_data.csv")
 
     #initializing 
     
-    Total_Month = 0
-    Profit_Value = 0
-    Total_Loss_Profit = 0
-    Total_Changes = 0
-    profit = []
+Total_Month = 0
+Profit_Value = 0
+Total_Loss_Profit = 0
+Total_Changes = 0
+profit = []
     
-    date = []
+date = []
 
     # calculating Total_month
-    Total_Month +=1
+    #Total_Month +=1
         #print(Total_Month)
-    Total_Loss_Profit += Loss/Profit
-        #print(Total_Loss_Profit)
+   # Total_Loss_Profit += Loss/Profit
+      #  #print(Total_Loss_Profit)
      
 with open(budget_data_csv) as csv_file:
     csvreader = csv.reader(csvfile, delimiter=',')
