@@ -19,11 +19,11 @@ def BudgetAnalysis(budgetdata):
     Profit_Value = 0
 
     # calculating Total_month
-    Total_Month +=
-        print(Total_Month)
+    Total_Month +=1
+        #print(Total_Month)
     Total_Loss_Profit += Loss/Profit
-        print(Total_Loss_Profit)
-    Average_Changes = 
+        #print(Total_Loss_Profit)
+     
 with open(budget_data_csv) as csv_file:
     csvreader = csv.reader(csvfile, delimiter=',')
 
@@ -31,10 +31,27 @@ with open(budget_data_csv) as csv_file:
     csv_header = next(csvr(csvreader)
     Total_Month += 1
     Total_Loss_Profit = int(first_row[1])
-    for row in csvreader:
-        dates.append(row[0])
 
-    
+    for row in csvreader:
+
+        dates.append(row[0])
+        Average_Changes = int(row[1]-Profit_Value)
+
+        Profit_value =int(row[0])
+        Total_Month += 1
+        Total_Loss_Profit = Total_Loss_Profit + int(row[1])
+
+        # Calculating the Greatest increase and decrease
+
+    Greatest_increase = max(profit)
+    Greatest_decrease min(profit)
+
+    Average_Changes =
+
+    print(Total_Month)
+    print(Total_Loss_Profit)
+
+
 
 
 
