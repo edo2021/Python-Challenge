@@ -5,7 +5,7 @@ budget_data_csv =os.path.join("..", "Resources", "budget_data.csv")
 
 
     #initializing 
-    dates = []
+    date = []
     Total_Month = 0
     Total_Loss_Profit = 0
     Total_Changes = 0
