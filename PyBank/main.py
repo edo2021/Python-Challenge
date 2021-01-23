@@ -6,8 +6,19 @@ budget_data_csv =os.path.join("..", "Resources", "budget_data.csv")
 def BudgetAnalysis(budgetdata):
     Total_Month = int(budgetdata[0])
     Total_Loss_Profit = float(budgetdata[1])
-    Average_Loss_Profit = float(budgetdata[2])
+    Average_Changes = float(budgetdata[2])
     Max_Loss_profit = float(budgetdata[3])
     Min_Loss_Profit = float(budgetdata[4])
+
+    # calculating Total_month
+    Total_Month +=date
+        print(Total_Month)
+    Total_Loss_Profit += Loss/Profit
+        print(Total_Loss_Profit)
+    Average_Changes = 
 with open(budget_data_csv) as csv_file:
+    csvreader = csv.reader(csvfile, delimiter=',')
+
+    header = next(csvreader)
     
+
