@@ -4,16 +4,18 @@ import csv
 
 budget_data =os.path.join("Resources","budget_data.csv")
 
-
+#List Created for storing Data
+Count = []
+profit = []
+    
+date = []
     #initializing 
     
 Total_Month = 0
 Profit_Value = 0
 Total_Loss_Profit = 0
 Total_Changes = 0
-profit = []
-    
-date = []
+
 
     # calculating Total_month
     #Total_Month +=1
