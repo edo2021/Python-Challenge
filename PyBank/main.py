@@ -1,16 +1,17 @@
 #Main Program for PyBank
 import os
 import csv
-budget_data_csv =os.path.join("..", "Resources", "budget_data.csv")
+budget_data =os.path.join("budget_data.csv")
 
 
     #initializing 
     
     Total_Month = 0
+    Profit_Value = 0
     Total_Loss_Profit = 0
     Total_Changes = 0
     profit = []
-    Profit_Value = 0
+    
     date = []
 
     # calculating Total_month
