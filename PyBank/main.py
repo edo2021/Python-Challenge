@@ -24,7 +24,7 @@ total_profit = 0
       #  #print(Total_Loss_Profit)
      
      #opening the file for reading
-with open(budget_data_csv, 'r') as csvfile:
+with open(budget_data.csv) as csvfile:
     csvreader = csv.reader(csvfile, delimiter=',')
 
 #Reading the header Row
@@ -46,9 +46,16 @@ with open(budget_data_csv, 'r') as csvfile:
         #calculate average changes
         final_profit = int(row[1])
         Monthly_change_Profits = final_profit - initial_Profit
-
         #Store monthly changes in the list
         Monthly_changes.append(Monthly_change_Profits)
+#calculate Total_Change_Profit and assign final profit to initial profit for next row
+        Total_Change_Profit = Total_Change_Profit + Monthly_change_Profits
+
+        initial_Profit = final_profit
+
+        #Calculate average change
+        Average_Changes_profit = Total_Change_Profit/count
+
 
         #Profit_Value = int(row[1])
 
@@ -62,9 +69,9 @@ with open(budget_data_csv, 'r') as csvfile:
 
     Average_Changes = sum(profit)/len(profits)
 
-    print(Total_Month)
-    print(Total_Loss_Profit)
+    print(count)
+    print(total_profit)
     print(Greatest_increase)
-    print(Geatest_decrease)
+    print(Greatest_decrease)
 
 
