@@ -2,7 +2,7 @@
 import os
 import csv
 
-budget_data =os.path.join("budget_data.csv")
+budget_data =os.path.join("Resources","budget_data.csv")
 
 
     #initializing 
@@ -35,7 +35,7 @@ with open(budget_data_csv) as csv_file:
 
         dates.append(row[0])
         Total_Changes = int(row[1]-Profit_Value
-        profit.append(Total_Changes)
+        profit.append(row[1])
         Profit_Value = int(row[1])
 
         Total_Month += 1
