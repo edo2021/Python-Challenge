@@ -29,20 +29,31 @@ with open(budget_data_csv, 'r') as csvfile:
 
 #Reading the header Row
     csv_header = next(csvreader)
-    first_row = next(csvreader)
-    Total_Month += 1
-    Total_Loss_Profit = int(first_row[1])
-    Profit_Value = int(first_row[1])
+    #first_row = next(csvreader)
+
+    #Total_Month += 1
+    #Total_Loss_Profit = int(first_row[1])
+    #Profit_Value = int(first_row[1])
 
     for row in csvreader:
+        count = count + 1
 
-        dates.append(row[0])
-        Total_Changes = int(row[1]-Profit_Value
+        date.append(row[0])
+        #Total_Changes = int(row[1]-Profit_Value
         profit.append(row[1])
-        Profit_Value = int(row[1])
+        total_profit = total_profit +int(row[1])
 
-        Total_Month += 1
-        Total_Loss_Profit = Total_Loss_Profit + int(row[1])
+        #calculate average changes
+        final_profit = int(row[1])
+        Monthly_change_Profits = final_profit - initial_Profit
+
+        #Store monthly changes in the list
+        Monthly_changes.append(Monthly_change_Profits)
+
+        #Profit_Value = int(row[1])
+
+        #Total_Month += 1
+        #Total_Loss_Profit = Total_Loss_Profit + int(row[1])
 
         # Calculating the Greatest increase and decrease
 
