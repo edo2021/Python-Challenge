@@ -10,8 +10,15 @@ def BudgetAnalysis(budgetdata):
     Max_Loss_profit = float(budgetdata[3])
     Min_Loss_Profit = float(budgetdata[4])
 
+    #initializing 
+    dates = []
+    Total_Month = 0
+    Total_Loss_Profit = 0
+    Average_Changes = 0
+    profits = []
+
     # calculating Total_month
-    Total_Month +=date
+    Total_Month +=
         print(Total_Month)
     Total_Loss_Profit += Loss/Profit
         print(Total_Loss_Profit)
@@ -20,5 +27,5 @@ with open(budget_data_csv) as csv_file:
     csvreader = csv.reader(csvfile, delimiter=',')
 
     header = next(csvreader)
-    
+
 
