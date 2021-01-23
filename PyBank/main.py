@@ -10,7 +10,7 @@ Total_Month = 0
 Profit_Value = 0
 Total_Loss_Profit = 0
 Total_Changes = 0
-profit = []
+profits = []
     
 date = []
 
@@ -35,7 +35,6 @@ with open(budget_data_csv) as csv_file:
         dates.append(row[0])
         Total_Changes = int(row[1]-Profit_Value
 
-        #Profit_value =int(row[0])
         profits.append(Total_Changes)
         Profit_Value = int(row[1])
 
