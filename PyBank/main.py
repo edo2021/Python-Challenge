@@ -37,20 +37,17 @@ with open(budget_data_csv) as csvfile:
 
     for row in csvreader:
         count = count + 1
-
         date.append(row[0])
-        #Total_Changes = int(row[1]-Profit_Value
         profit.append(row[1])
         total_profit = total_profit +int(row[1])
 
         #calculate average changes
         final_profit = int(row[1])
-        Monthly_change_Profits = final_profit - initial_Profit
+        Monthly_change_Profits = final_profit + initial_Profit
         #Store monthly changes in the list
         Monthly_changes.append(Monthly_change_Profits)
 #calculate Total_Change_Profit and assign final profit to initial profit for next row
-        Total_Change_Profit = Total_Change_Profit + Monthly_change_Profits
-
+        Total_Change_Profit = Total_Change_Profit - Monthly_change_Profits 
         initial_Profit = final_profit
 
         #Calculate average change
