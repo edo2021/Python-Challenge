@@ -5,16 +5,16 @@ import csv
 budget_data =os.path.join("Resources","budget_data.csv")
 
 #List Created for storing Data
-Count = []
+Monthly_changes = []
 profit = []
-    
 date = []
     #initializing 
-    
-Total_Month = 0
+
+count = 0
+initial_Profit = 0
 Profit_Value = 0
-Total_Loss_Profit = 0
-Total_Changes = 0
+Total_Change_Profit = 0
+total_profit = 0
 
 
     # calculating Total_month
@@ -23,7 +23,8 @@ Total_Changes = 0
    # Total_Loss_Profit += Loss/Profit
       #  #print(Total_Loss_Profit)
      
-with open(budget_data_csv) as csv_file:
+     #opening the file for reading
+with open(budget_data_csv, 'r') as csvfile:
     csvreader = csv.reader(csvfile, delimiter=',')
 
 #Reading the header Row
