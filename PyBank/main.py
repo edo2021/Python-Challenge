@@ -2,7 +2,7 @@
 import os
 import csv
 
-budget_data =os.path.join("Resources","budget_data.csv")
+budget_data_csv =os.path.join("Resources","budget_data.csv")
 
 #List Created for storing Data
 Monthly_changes = []
@@ -24,7 +24,7 @@ total_profit = 0
       #  #print(Total_Loss_Profit)
      
      #opening the file for reading
-with open(budget_data.csv) as csvfile:
+with open(budget_data_csv) as csvfile:
     csvreader = csv.reader(csvfile, delimiter=',')
 
 #Reading the header Row
