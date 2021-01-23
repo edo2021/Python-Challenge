@@ -67,7 +67,7 @@ with open(budget_data_csv) as csvfile:
     Greatest_increase = max(profit)
     Greatest_decrease = min(profit)
 
-    Average_Changes = sum(profit)/len(profits)
+    #Average_Changes = sum(profit)/len(profits)
 
     print(count)
     print(total_profit)
