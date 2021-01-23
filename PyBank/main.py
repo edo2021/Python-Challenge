@@ -1,6 +1,7 @@
 #Main Program for PyBank
 import os
 import csv
+
 budget_data =os.path.join("budget_data.csv")
 
 
@@ -10,7 +11,7 @@ Total_Month = 0
 Profit_Value = 0
 Total_Loss_Profit = 0
 Total_Changes = 0
-profits = []
+profit/losses = []
     
 date = []
 
@@ -35,7 +36,7 @@ with open(budget_data_csv) as csv_file:
         dates.append(row[0])
         Total_Changes = int(row[1]-Profit_Value
 
-        profits.append(Total_Changes)
+        profit/losses.append(Total_Changes)
         Profit_Value = int(row[1])
 
         Total_Month += 1
@@ -46,7 +47,7 @@ with open(budget_data_csv) as csv_file:
     Greatest_increase = max(profit)
     Greatest_decrease = min(profit)
 
-    Average_Changes = sum(profits)/len(profits)
+    Average_Changes = sum(profit/losses)/len(profits/losses)
 
     print(Total_Month)
     print(Total_Loss_Profit)
