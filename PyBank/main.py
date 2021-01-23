@@ -3,12 +3,6 @@ import os
 import csv
 budget_data_csv =os.path.join("..", "Resources", "budget_data.csv")
 
-def BudgetAnalysis(budgetdata):
-    Total_Month = int(budgetdata[0])
-    Total_Loss_Profit = float(budgetdata[1])
-    Total_Changes = float(budgetdata[2])
-    Max_Loss_profit = float(budgetdata[3])
-    Min_Loss_Profit = float(budgetdata[4])
 
     #initializing 
     dates = []
@@ -40,7 +34,7 @@ with open(budget_data_csv) as csv_file:
         Total_Changes = int(row[1]-Profit_Value
 
         #Profit_value =int(row[0])
-        profit.append(Total_Changes)
+        profits.append(Total_Changes)
         Profit_Value = int(row[1])
 
         Total_Month += 1
