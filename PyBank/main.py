@@ -69,9 +69,15 @@ with open(budget_data_csv) as csvfile:
 
     #Average_Changes = sum(profit)/len(profits)
 
-    print(count)
-    print(total_profit)
-    print(Greatest_increase)
-    print(Greatest_decrease)
+    print(f"Total Months:" + str(count))
+    print("total_profit:" + "$" + str(total_profit))
+    print("Average Change: " + "$" + str(int(Average_Changes_profit)))
+
+    #print("Greatest Increase in Profits:" + str(date)+ "$" +str(Greatest_increase))
+    #print("Greatest Decrease in Profits:" + str(date) +"$"+str(Greatest_decrease))
+    print("Greatest Increase in Profits:" + "$" +str(Greatest_increase))
+    print("Greatest Decrease in Profits:" + "$"+str(Greatest_decrease))
+
+
 
 
