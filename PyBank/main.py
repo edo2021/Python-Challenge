@@ -32,6 +32,17 @@ with open (Budget_datacsv) as csvfile:
         count = count + 1
         date.append(row[0])
         profit.append(row[1])
+        total_profit = total_profit + int(row[1])
+
+        final_profit = int(row[1])
+
+        monthly_change_profits = final_profit - initial_profit
+        monthly_changes.append(monthly_change_profits)
+        total_change_profits = total_change_profits + monthly_change_profits
+        initial_profit = final_profit
+
+        average_change_profits = (total_change_profits/count)
+
 
 
 
