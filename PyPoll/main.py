@@ -24,9 +24,21 @@ count = 0
 with open(PyPollcsv, newline="") as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
     csv_header = next(csvreader)
-    # Conduct the ask
+
+    #read the csv file from all row
     for row in csvreader:
+
         # Count the total number of votes
         count = count + 1
-        # Set the candidate names to candidatelist
+        # append candidate names list 
         candidatelist.append(row[2])
+
+    for x in set(candidatelist):
+        unique_candidate.append(x)
+        # y is the total number of votes per candidate
+        y = candidatelist.count(x)
+        vote_count.append(y)
+        
+        # z is the percent of total votes per candidate
+        z = (y/count)*100
+        vote_percent.append(z)
