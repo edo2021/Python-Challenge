@@ -70,7 +70,7 @@ with open('election_Data_results.txt', 'w') as text:
     text.write("Total Vote: " + str(count) + "\n")
     text.write("---------------------------------------\n")
     for i in range(len(set(unique_candidate))):
-        text.write(unique_candidate[i] + ": " + str(vote_percent[i]) +"% (" + str(vote_count[i]) + ")\n")
+        text.write(unique_candidate[i] + ": " + str(round(vote_percent[i],1)) +"00% (" + str(vote_count[i]) + ")\n")
     text.write("---------------------------------------\n")
     text.write("The winner is: " + winner + "\n")
     text.write("--------------------------------------")
