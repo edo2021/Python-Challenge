@@ -38,7 +38,13 @@ with open(PyPollcsv, newline="") as csvfile:
         # y is the total number of votes per candidate
         y = candidatelist.count(x)
         vote_count.append(y)
-        
+
         # z is the percent of total votes per candidate
         z = (y/count)*100
         vote_percent.append(z)
+
+    winning_vote_count = max(vote_count)
+    winner = unique_candidate[vote_count.index(winning_vote_count)]
+
+
+print("Total Votes :" + str(count)) 
