@@ -25,7 +25,13 @@ with open (Budget_datacsv) as csvfile:
     csvreader = csv.reader(csvfile, delimite = ",")
 
     # Reading the heeading
-    cvs.csv_header = next(csvreader)
+    cvs_header = next(csvreader)
+
+    # for loop to append List and to calculate the variables
+    for row in csvreader:
+        count = count + 1
+        date.append(row[0])
+        profit.append(row[1])
 
 
 
