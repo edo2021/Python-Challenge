@@ -65,8 +65,15 @@ with open(Datacsv, newline="") as csvfile:
        
       
 
-
-
+with open('Data.txt', 'w') as text:
+    text.write("The Financial Data Analysis Of ByPank\n""\n")
+    
+    text.write("    Total Months: " + str(count) + "\n")
+    text.write("    Total Profits: " + "$" + str(total_profit) +"\n")
+    text.write("    Average Change: " + '$' + str(int(average_change_profits)) + "\n")
+    text.write("    Greatest Increase in Profits: " + str(increase_date) + " ($" + str(greatest_increase_profits) + ")\n")
+    text.write("    Greatest Decrease in Profits: " + str(decrease_date) + " ($" + str(greatest_decrease_profits) + ")\n")
+   
 
 
 

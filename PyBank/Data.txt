@@ -1,0 +1,7 @@
+The Financial Data Analysis Of ByPank
+
+    Total Months: 86
+    Total Profits: $38382578
+    Average Change: $7803
+    Greatest Increase in Profits: 12-Feb ($1926159)
+    Greatest Decrease in Profits: 13-Sep ($-2196167)
