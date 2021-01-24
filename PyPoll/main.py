@@ -47,6 +47,18 @@ with open(PyPollcsv, newline="") as csvfile:
     winner = unique_candidate[vote_count.index(winning_vote_count)]
 
 
-print("Total Votes :" + str(count)) 
+
+
+print("-------------------------")
+print("Election Results")   
+print("-------------------------")
+print("Total Votes :" + str(count))    
+print("-------------------------")
 for i in range(len(unique_candidate)):
-            print(unique_candidate[i] + ": " + str(vote_percent[i]) +"% (" + str(vote_count[i])+ ")")
+            print(unique_candidate[i] +   ": " + str(round(vote_percent[i], 0)) +"% (" + str(vote_count[i])+ ")")
+
+
+
+print("-------------------------")
+print("The winner is: " + winner)
+print("-------------------------")
