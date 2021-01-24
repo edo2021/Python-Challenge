@@ -48,3 +48,5 @@ with open(PyPollcsv, newline="") as csvfile:
 
 
 print("Total Votes :" + str(count)) 
+for i in range(len(unique_candidate)):
+            print(unique_candidate[i] + ": " + str(vote_percent[i]) +"% (" + str(vote_count[i])+ ")")
