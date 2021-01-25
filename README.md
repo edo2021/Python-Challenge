@@ -2,7 +2,7 @@
 # Python-Challenge
 
 THis is Python code, prepared by Edris Gemtessa at University of minnesota.
-this code analysis ByBank financial analysis and ByPoll election analysis. as the following:
+this code is analysis ByBank financial analysis and ByPoll election analysis. as the following:
   The total number of months included in the dataset
 
 
