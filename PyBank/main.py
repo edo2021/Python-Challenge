@@ -34,8 +34,8 @@ with open(Datacsv, newline="") as csvfile:
     for row in csvreader:
         count = count + 1
         date.append(row[0])
-        profit.append(row[1])
-        total_profit = total_profit + int(row[1])
+        profit.append(int(row[1]) -1)
+        total_profit += int(row[1])
 
         final_profit = int(row[1])
 
@@ -53,14 +53,14 @@ with open(Datacsv, newline="") as csvfile:
         decrease_date = date[monthly_changes.index(greatest_decrease_profits)]
 
     
-    
-    print("Total Months: " + str(count))
-    print("Total Profits: " + "$" + str(total_profit))
+    print("========---Financial Analysis of ByPank===================----")
+    print("               Total Months: " + str(count))
+    print("               Total Profits: " + "$" + str(total_profit))
 
-    print("Average Change: " + "$" + str(int(average_change_profits)))
+    print("               Average Change: " + "$" + str(int(average_change_profits)))
     
-    print("Greatest Increase in Profits: " + str(increase_date) + " ($" + str(greatest_increase_profits) + ")")
-    print("Greatest Decrease in Profits: " + str(decrease_date) + " ($" + str(greatest_decrease_profits)+ ")")
+    print("               Greatest Increase in Profits: " + str(increase_date) + " ($" + str(greatest_increase_profits) + ")")
+    print("               Greatest Decrease in Profits: " + str(decrease_date) + " ($" + str(greatest_decrease_profits)+ ")")
     
        
       
