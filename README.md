@@ -1,7 +1,7 @@
 
 # Python-Challenge
 
- <h1> By: Edris Gemtessa</h1>  <h2>@ University of minnesota.</h2>
+ 
 <p>This project is analysis ByBank financial analysis and ByPoll election analysis. as the following:</P>
 
 <h1>PyBank<h1>
