@@ -5,7 +5,8 @@ THis is Python code, prepared by Edris Gemtessa at University of minnesota.
 this code is analysis ByBank financial analysis and ByPoll election analysis. as the following:
 
 <h1>PyBank<h1>
-  ![image](https://user-images.githubusercontent.com/76269709/120911349-7c4a7280-c64c-11eb-932f-0f9706daad30.png)
+  
+![image](https://user-images.githubusercontent.com/76269709/120911469-54a7da00-c64d-11eb-9028-54a80b45580c.png)
 
   The total number of months included in the dataset
 
