@@ -25,7 +25,7 @@
 
   ![image](https://user-images.githubusercontent.com/76269709/120911449-30e49400-c64d-11eb-8397-1e8f5395883f.png)
 
-<ol>
+<ul>
 <li>The total number of votes cast</li>
 
 
@@ -39,7 +39,7 @@
 
 
  <li>The winner of the election based on popular vote.</li>
- </ol>
+ </ul>
 
  
  ![image](https://user-images.githubusercontent.com/76269709/120911669-b7e63c00-c64e-11eb-8ec2-4060b07d95da.png)
