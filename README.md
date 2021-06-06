@@ -38,7 +38,8 @@
 <li>The total number of votes each candidate won</li>
 
 
- <li>The winner of the election based on popular vote.</li></ol>
+ <li>The winner of the election based on popular vote.</li>
+ </ol>
 
  
  ![image](https://user-images.githubusercontent.com/76269709/120911669-b7e63c00-c64e-11eb-8ec2-4060b07d95da.png)
