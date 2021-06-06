@@ -21,7 +21,7 @@ The greatest increase in profits (date and amount) over the entire period
 The greatest decrease in losses (date and amount) over the entire 
 
 
-==============================================================================================================================
+================================================================
 <h1>PyPoll<h1/>
 
   ![image](https://user-images.githubusercontent.com/76269709/120911449-30e49400-c64d-11eb-8397-1e8f5395883f.png)
@@ -40,3 +40,4 @@ The total number of votes each candidate won
 
 
 The winner of the election based on popular vote.
+![image](https://user-images.githubusercontent.com/76269709/120911608-51f9b480-c64e-11eb-996d-54e4bb2da4e9.png)
