@@ -22,7 +22,8 @@ The greatest decrease in losses (date and amount) over the entire
 
 ==============================================================================================================================
 <h1>PyPoll<h1/>
-![image](https://user-images.githubusercontent.com/76269709/120911370-aef46b00-c64c-11eb-87a9-66fe62dd9658.png)
+
+  ![image](https://user-images.githubusercontent.com/76269709/120911449-30e49400-c64d-11eb-8397-1e8f5395883f.png)
 
 
 The total number of votes cast
